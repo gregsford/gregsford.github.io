@@ -1,0 +1,81 @@
+body {
+    text-align: center;
+}  
+
+/* NAV BAR */
+.navbar {
+    font-family: 'Comfortaa', cursive;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+   
+li a:hover:not(.active) {
+  background-color: #111;
+}
+  
+.active {
+  background-color: #044caa;
+}
+
+
+/* BIG NAME SECTION */
+
+.big-name {
+    
+}
+
+#hero-name {
+    font-family: 'Rock Salt', cursive;
+}
+
+#hero-title {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+
+/* PROJECTS SECTION  */
+#projects-h1 {
+    
+}
+
+.projects {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+/* ABOUT SECTION  */
+
+#about-h1 {
+      
+}
+
+.about {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+  /* CONTACT SECTION  */
+
+#contact-h1 {
+
+}
+
+.contact {
+    font-family: 'Barlow Condensed', sans-serif;
+}
