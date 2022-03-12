@@ -1,0 +1,116 @@
+body {
+    text-align: center;
+    background-color: #82bfed;
+}  
+
+/* NAV BAR */
+.navbar {
+    font-family: 'Comfortaa', cursive;
+    width: 100%;
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+   
+li a:hover:not(.active) {
+  background-color: #111;
+}
+  
+.active {
+  background-color: #044caa;
+}
+
+
+/* BIG NAME SECTION */
+
+.big-name {
+    
+}
+
+#hero-name {
+    font-family: 'Rock Salt', cursive;
+    font-size: 50px;
+}
+
+#hero-title {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 35px;
+}
+
+.fade-in {
+  -webkit-animation: pulsate 15s ease-in;
+  -webkit-animation-iteration-count: infinite 
+  opacity: 0.2;
+}
+@-webkit-keyframes pulsate {
+  0% { 
+      opacity: 0;
+  }
+  50% { 
+      opacity: 1.0;
+  }
+  100% { 
+      opacity: 2;
+  }
+}
+
+#line-between {
+  position: relative;
+  height: 10px;
+  width: 625px;
+  background-color: black;
+  border-radius: 5px;
+  border-style: none;
+}
+
+
+
+/* PROJECTS SECTION  */
+#projects-h1 {
+    
+}
+
+.projects {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2.5rem;
+}
+
+/* ABOUT SECTION  */
+
+#about-h1 {
+      
+}
+
+.about {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2.5rem;
+}
+
+  /* CONTACT SECTION  */
+
+#contact-h1 {
+
+}
+
+.contact {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2.5rem;
+}
