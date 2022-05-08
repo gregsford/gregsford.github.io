@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2459bd4971.js" crossorigin="anonymous"></script>
+    <title>G.S. Ford: Web Designer and Developer</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="nav-container">
+        <div class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">ProjecTs</a></li>
+                <li><a href="#contact">ConTact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div id="home" class="hero-container">
+        <div class="logo">
+            <p class="pfirstname">G.S.</p>
+            <p class="plastname">Ford</p>
+        </div>
+        <section class="hero">
+            <p class="ptitle">Web Developer</p>
+            <p>With a passion for creating and design, G.S. Ford spends most of his spare time studying the language of coding. This love of innovation, art, and creative pursuits spans back to the streets of New York City, where he lived most of his life. G.S. stumbled onto coding after some years as a musician. Through this he came to understand that languages come in many forms and how to shape them to create precisely the clients needs.</p>
+        </section>
+    </div>
+    <div class="btn-container">
+        <a href="#contact" class="btn">Hire Me As Your Website Designer</a>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="about-container">
+        <section class="about">
+            <p class="about-title">About Me</p>
+            <br>
+            <p>const aboutMe = {</p>
+            <p class="aboutJava">name: 'G.S. Ford',</p>
+            <p class="aboutJava">location: 'Florida',</p>
+            <p class="aboutJava">education: ['Treehouse', 'freeCodeCamp', 'Udemy', 'YouTube'],</p>
+            <p class="aboutJava">programming: ['HTML', 'CSS', 'JavaScript', 'React', 'Bootstrap'],</p>
+            <p class="aboutJava">favorite_music: ['Deftones', 'Meshuggah', 'Thrice', 'Pantera'],</p>
+            <p class="aboutJava">favorite_movies: ['Jacobs Ladder', 'The Big Lebowski'],</p>
+            <p class="aboutJava">favorite_food: 'Italian',</p>
+            <p class="aboutJava">goals: 'To become an expert in Full Stack Developement'</p>
+            <p>};</p>
+        </section>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects">
+        <div>
+            <p class="projects-title">My Projects</p>
+        </div>
+        <div class="projects-container">
+            <div>
+                <img src="images/DR logo.png" alt="drummond reacts logo">
+                <br>
+                <div class="mod-btn">
+                    <button class="modal-btn1">Drummond Reacts</button>
+                </div>
+            </div>
+            <div class="modal-bg1">
+                <div class="modal modal1">
+                    <p class="modal-p1">DRUMMOND REACTS</p>
+                    <p class="modal-p2">HTML, CSS, Netlify</p>
+                    <p class="modal-p3">I developed this website for my YouTube channel where I react to new (to me) music.</p>
+                    <!-- <p class="modal-p4"><em>extra</em></p> -->
+                    <a href="https://www.drummondreacts.com/" target="_blank" class="modal-a">Drummond Reacts website</a>
+                    <span class="modal-close1">X</span>
+                </div>
+            </div>
+            <div>
+                <img src="images/bg-gen-logo.png" alt="background generator">
+                <br>
+                <div class="mod-btn">
+                    <button class="modal-btn2">Background Generator</button>
+                </div>
+            </div>
+            <div class="modal-bg2">
+                <div class="modal modal2">
+                    <p class="modal-p1">Background Generator</p>
+                    <p class="modal-p2">HTML, CSS, JavaScript, Github, Netlify</p>
+                    <p class="modal-p3">A project made while taking a course on Udemy.</p>
+                    <!-- <p class="modal-p4"><em>extra</em></p> -->
+                    <a href="https://steady-dragon-c1202f.netlify.app/" target="_blank" class="modal-a">Background Generator website</a>
+                    <span class="modal-close2">X</span>
+                </div>
+            </div>
+            <div>
+                <img src="images/edefstry2.png" alt="edefstry logo">
+                <br>
+                <div class="mod-btn">
+                    <button class="modal-btn3">Edefstry</button>
+                </div>
+            </div>
+            <div class="modal-bg3">
+                <div class="modal modal3">
+                    <p class="modal-p1">Edefstry</p>
+                    <p class="modal-p2">HTML, CSS, Github, Netlify</p>
+                    <p class="modal-p3">For this project, I decided to recreate my old bands website.</p>
+                    <p class="modal-p4"><em>Website layout specifically designed for desktop viewing</em></p>
+                    <a href="https://graceful-lokum-312181.netlify.app/" target="_blank" class="modal-a">Edefstry website</a>
+                    <span class="modal-close3">X</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="contact">
+        <div>
+            <p class="contact-p">Would you like to work togther? If so, then please fill out the contact form below with a brief description of your project.
+            <br>I look forward to helping you expand your business needs.</p>
+        </div>
+        <div class="form-container">
+            <form action="https://getform.io/f/5f98aa43-16dc-4e71-99de-17c6a7b40434" method="POST">
+                <label for="name" class="iname">Name:</label>
+                <input type="text" name="name" class="name-form" placeholder="Your Name">
+                <label for="email" class="iemail">Email:</label>
+                <input type="email" name="email" class="email-form" placeholder="Email Address">
+                <label class="imsg">Tell me about your project needs</label>
+                <textarea rows="10" cols="50" name="message" class="imsgbox"></textarea>
+                <div>
+                <input type="submit" class="submit" value="submiTt">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="links">
+            <a href="https://github.com/gregsford"target=_blank><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://codepen.io/gregsford"target=_blank><i class="fab fa-codepen fa-2x"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100079780383503"target=_blank><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://www.instagram.com/gsford.dev/"target=_blank><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://twitter.com/GsFordDev"target=_blank><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="https://www.youtube.com/channel/UC7A9BktiAOLx4sfosj8zJfQ"target=_blank><i class="fab fa-youtube fa-2x"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

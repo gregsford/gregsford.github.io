@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+@font-face {
+    font-family: TheLastCall;
+    src: url(TheLastCall-Regular.ttf);
+}
+
+:root {
+    --primary-color: #ff6432;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+    color: #fff;
+    background-color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Navigation */
+.nav-container {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    border-bottom: #ff6432 1px solid;
+    z-index: 2;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar ul li {
+    padding: 10px 5px;
+    font-size: 2rem;
+    font-family: 'TheLastCall';
+}
+
+.navbar ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero-container {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    margin: 130px 0 100px -100px;
+    font-family: 'TheLastCall';
+    color: #ff6432;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: var(--primary-color) 5px 8px 10px;
+    z-index: 1;
+}
+
+.pfirstname {
+    font-size: 12rem;
+}
+
+.plastname {
+    font-size: 8rem;
+}
+
+.pfirstname, .plastname {
+    color: black;
+}
+
+.ptitle {
+    margin-top: 5px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-shadow: #8b2909 3px 3px 3px;
+}
+
+.hero {
+    height:425px;
+    width: 650px;
+    padding: 0 10px 0 25px;
+    text-align: right;
+    margin: 50px -80px 20px -110px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #000000, #1000a0);
+}
+
+.hero p {
+    margin-top: 15px;
+    padding-left: 90px;
+    color: rgba(255, 255, 255, 0.734)
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    cursor: pointer;
+    background: var(--primary-color);
+    color: black;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: 5px 0 20px 0;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #ff653271;
+    transform: scale(.98);
+    color: #fff;
+}
+
+/* About Section */
+.about-container {
+    text-align: center;
+}
+
+.about {
+    height: 450px;
+    width: 650px;
+    padding: 0 25px;
+    text-align: left;
+    margin: 80px 80px 20px 400px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    background-image: linear-gradient(to left, #000000, #1000a0);
+}
+
+.about-title {
+    padding-top: 8px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-shadow: #8b2909 3px 3px 3px;
+    text-align: center;
+}
+
+.about p {
+    width: 700px;
+}
+
+.aboutJava {
+    padding-left: 50px;
+}
+
+/* Projects Section */
+.projects-title {
+    text-align: center;
+    margin: 100px 0 30px 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-shadow: #8b2909 3px 3px 3px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 350px;
+    height: 200px;
+    border: var(--primary-color) 10px groove;
+    margin: 0 10px;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+}
+
+.contact-p {
+    font-size: 1.5rem;
+    padding-top: 70px;
+    margin-top: 100px;
+}
+
+.form-container {
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.iname {
+    font-size: 1.6rem;
+}
+
+.name-form {
+    height: 25px;
+    width: 30%;
+}
+
+.iemail {
+    padding-top: 20px;
+    font-size: 1.6rem;
+}
+
+.email-form {
+    height: 25px;
+    width: 30%;
+}
+
+.imsg {
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+
+.imsgbox {
+    width: 30%;
+}
+
+.submit {
+    margin-top: 15px;
+    font-family: 'TheLastCall';
+    font-size: 30px;
+    padding: 12px 20px 10px 20px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.submit:hover {
+    cursor: pointer;
+    transform: scale(.98);
+    color: #fff;
+    background-color: #8b2909;
+}
+
+/* Footer */
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: var(--primary-color) 1px solid;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--primary-color);
+    background-color: black;
+}
+
+.links a {
+    padding: 20px 40px;
+    color: var(--primary-color);
+}
+
+.links a:hover {
+    color: #fff;
+}
+
+/* Modals */
+.mod-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-btn1, .modal-btn2, .modal-btn3 {
+    background-color: var(--primary-color);
+    padding: 10px;
+    font-family: 'TheLastCall';
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.modal-btn1:hover, .modal-btn2:hover, .modal-btn3:hover {
+    cursor: pointer;
+    transform: scale(.98);
+    color: #fff;
+    background-color: #8b2909;
+}
+
+.modal-bg1, .modal-bg2, .modal-bg3 {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 94, 0, .4);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.bg-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    position: relative;
+    border: var(--primary-color) 10px groove;
+    background-color: black;
+    width: 30%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-p1 {
+    font-family: 'TheLastCall';
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.modal-p2 {
+    font-size: 1.5rem;
+}
+
+.modal-p3 {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.modal-p4 {
+    font-size: .7rem;
+}
+
+.modal-a {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.modal-a:hover {
+    color: #fff;
+}
+
+.modal-close1, .modal-close2, .modal-close3 {
+    font-family: 'TheLastCall';
+    color: var(--primary-color);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+/* Media Query */
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+    /* Navigation */
+    .nav-container {
+        position: relative;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        width: 50%;
+        text-align: center;
+    }
+
+    .navbar ul {
+        background-color: var(--primary-color);
+        width: 100vw;
+    }
+
+    .navbar ul li {
+        padding: 5px 5px;
+        font-family: 'TheLastCall';
+        border-bottom: 2px solid black;
+    }
+
+    .navbar ul li a {
+        color: black;
+    }
+
+    /* Hero Section */
+    .logo {
+        padding: 175px 0 0px 0px;
+        font-family: 'TheLastCall';
+        color: #ff6432;
+        text-align: center;
+        text-shadow: var(--primary-color) 5px 8px 10px;
+    }
+
+    .pfirstname {
+        font-size: 150px;
+    }
+
+    .plastname {
+        font-size: 90px;
+    }
+
+    .ptitle {
+        font-size: 2.2rem;
+    }
+
+    .hero {
+        padding: 0 10px 10px 25px;
+        text-align: center;
+        /* delete this after */
+        background-image: linear-gradient(to right, #000000, #1000a0);
+    }
+
+    .hero p {
+        margin-top: 15px;
+        color: rgba(255, 255, 255, 0.734)
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn {
+        cursor: pointer;
+        background: var(--primary-color);
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px 10px;
+        margin: 20px 0 20px 0;
+        border-radius: 5px;
+    }
+
+    /* About Section */
+    .about {
+        padding: 25px 25px;
+        text-align: left;
+        margin-right: -10px;
+        /* delete this after */
+        background-image: linear-gradient(to left, #000000, #1000a0);
+    }
+
+    .aboutJava {
+        padding-left: 12px;
+    }
+
+    /* Projects Section */
+    .projects-title {
+        margin: 75px 0 30px 0;
+        font-size: 2.2rem;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 90vw;
+        height: 100%;
+        border: var(--primary-color) 10px groove;
+    }
+
+    /* Contact Section */
+
+    .contact-p {
+        font-size: 18px;
+        padding-top: 30px;
+    }
+
+    .form-container {
+        margin-top: 30px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .name-form, .email-form {
+        height: 20px;
+        width: 40%;
+    }
+
+    .imsg {
+        font-size: 18px;
+    }
+
+    .imsgbox {
+        width: 80%;
+    }
+
+    .submit {
+        font-size: 24px;
+        padding: 8px 16px 8px 10px;
+    }
+
+    /* Footer */
+    footer {
+        border-top: var(--primary-color) 2px solid;
+        margin-top: 20px;
+    }
+
+    .links a {
+        padding: 10px 30px;
+    }
+
+    /* Modals */
+    .mod-btn {
+        display: none;
+    }
+
+    .modal-p1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .modal-p2 {
+        text-align: center;
+    }
+
+    .modal-p4 {
+        text-align: center;
+    }
+
+    .modal-a {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .modal1, .modal2, .modal3 {
+        margin-bottom: 50px;
+        text-align: center;
+        padding: 5px;
+    }
+
+    span {
+        display: none;
+    }
+}
