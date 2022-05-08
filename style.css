@@ -28,6 +28,8 @@ li {
 /* Navigation */
 .nav-container {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     background-color: black;
     border-bottom: #ff6432 1px solid;
@@ -58,7 +60,7 @@ li {
 /* Hero Section */
 .hero-container {
     display: flex;
-    flex-direction: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -66,7 +68,7 @@ li {
 .logo {
     display: flex;
     flex-direction: column;
-    margin: 130px 0 100px -100px;
+    margin: 130px 0 100px 0px;
     font-family: 'TheLastCall';
     color: #ff6432;
     font-weight: normal;
@@ -374,66 +376,80 @@ footer {
 }
 
 
-/* Media Query */
-@media only screen and (min-width: 321px) and (max-width: 768px) {
+/* Media Queries */
+@media only screen and (min-width: 480px) and (max-width: 768px) {
     /* Navigation */
     .nav-container {
-        position: relative;
-    }
-
-    .navbar {
-        position: absolute;
-        top: 0;
-        width: 50%;
-        text-align: center;
+        width: 100vw;
+        background-color: var(--primary-color);
     }
 
     .navbar ul {
-        background-color: var(--primary-color);
-        width: 100vw;
+        display: flex;
+        flex-direction: column;
     }
 
     .navbar ul li {
         padding: 5px 5px;
+        font-size: 1.2rem;
         font-family: 'TheLastCall';
+        text-align: center;
         border-bottom: 2px solid black;
     }
 
     .navbar ul li a {
         color: black;
+        text-decoration: none;
+    }
+
+    .navbar ul li a:hover {
+        cursor: pointer;
+        color: #fff;
     }
 
     /* Hero Section */
-    .logo {
-        padding: 175px 0 0px 0px;
-        font-family: 'TheLastCall';
-        color: #ff6432;
-        text-align: center;
-        text-shadow: var(--primary-color) 5px 8px 10px;
-    }
-
-    .pfirstname {
-        font-size: 150px;
-    }
-
-    .plastname {
-        font-size: 90px;
-    }
-
-    .ptitle {
-        font-size: 2.2rem;
+    .hero-container {
+        margin: 30px;
     }
 
     .hero {
-        padding: 0 10px 10px 25px;
-        text-align: center;
-        /* delete this after */
-        background-image: linear-gradient(to right, #000000, #1000a0);
+        background-image: none;
+        margin-top: 0;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 130px 0 100px 0px;
+        border-radius: 0;
+    }
+
+    .pfirstname {
+        font-size: 12rem;
+    }
+
+    .plastname {
+        font-size: 8rem;
+    }
+
+    .pfirstname, .plastname {
+        color: black;
+        text-shadow: var(--primary-color) 5px 5px 20px;
+        font-family: 'TheLastCall';
+    }
+
+    .ptitle {
+        font-size: 3rem;
+        color: #fff;
+        text-transform: uppercase;
+        text-shadow: #8b2909 3px 3px 3px;
     }
 
     .hero p {
-        margin-top: 15px;
-        color: rgba(255, 255, 255, 0.734)
+        text-align: center;
+        padding: 30px;
+        color: #fff;
     }
 
     .btn-container {
@@ -445,30 +461,49 @@ footer {
         cursor: pointer;
         background: var(--primary-color);
         color: black;
-        text-align: center;
         text-decoration: none;
-        padding: 10px 10px;
-        margin: 20px 0 20px 0;
+        padding: 10px 30px;
+        margin: 15px 0 20px 0;
         border-radius: 5px;
     }
 
+    .btn:hover {
+        background-color: #ff653271;
+        transform: scale(.98);
+        color: #fff;
+    }
+
     /* About Section */
+    .about-container {
+        text-align: center;
+        margin: 0;
+    }
+
     .about {
-        padding: 25px 25px;
-        text-align: left;
-        margin-right: -10px;
-        /* delete this after */
-        background-image: linear-gradient(to left, #000000, #1000a0);
+        height: 250px;
+        margin: 0;
+        background-image: none;
+    }
+
+    .about-title {
+        display: none;
+    }
+
+    .about p {
+        font-size: 1rem;
     }
 
     .aboutJava {
-        padding-left: 12px;
+        padding-left: 50px;
     }
 
     /* Projects Section */
     .projects-title {
-        margin: 75px 0 30px 0;
-        font-size: 2.2rem;
+        text-align: center;
+        margin: 100px 0 30px 0;
+        font-size: 3rem;
+        text-transform: uppercase;
+        text-shadow: #8b2909 3px 3px 3px;
     }
 
     .projects-container {
@@ -476,89 +511,447 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        margin: 30px;
     }
 
     img {
-        width: 90vw;
-        height: 100%;
+        width: 350px;
+        height: 200px;
         border: var(--primary-color) 10px groove;
+        margin: 0 10px;
     }
 
     /* Contact Section */
+    .contact {
+        text-align: center;
+    }
 
     .contact-p {
-        font-size: 18px;
-        padding-top: 30px;
+        font-size: 1.5rem;
+        padding-top: 20px;
+        margin: 20px;
     }
 
     .form-container {
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     form {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
+        padding: 30px;
     }
 
-    .name-form, .email-form {
-        height: 20px;
-        width: 40%;
+    .iname {
+        font-size: 1.6rem;
+    }
+
+    .name-form {
+        height: 25px;
+        width: 50%;
+    }
+
+    .iemail {
+        padding-top: 20px;
+        font-size: 1.6rem;
+    }
+
+    .email-form {
+        height: 25px;
+        width: 50%;
     }
 
     .imsg {
-        font-size: 18px;
+        padding-top: 20px;
+        font-size: 1.5rem;
     }
 
     .imsgbox {
-        width: 80%;
+        width: 65%;
     }
 
     .submit {
-        font-size: 24px;
-        padding: 8px 16px 8px 10px;
+        margin-top: 15px;
+        font-family: 'TheLastCall';
+        font-size: 30px;
+        padding: 12px 20px 10px 20px;
+        background-color: var(--primary-color);
+        border-radius: 5px;
+    }
+
+    .submit:hover {
+        cursor: pointer;
+        transform: scale(.98);
+        color: #fff;
+        background-color: #8b2909;
     }
 
     /* Footer */
     footer {
-        border-top: var(--primary-color) 2px solid;
-        margin-top: 20px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        border-top: var(--primary-color) 1px solid;
+    }
+
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        color: var(--primary-color);
+        background-color: black;
     }
 
     .links a {
-        padding: 10px 30px;
+        padding: 20px 40px;
+        color: var(--primary-color);
+    }
+
+    .links a:hover {
+        color: #fff;
     }
 
     /* Modals */
     .mod-btn {
-        display: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .modal-btn1, .modal-btn2, .modal-btn3 {
+        visibility: hidden;
+    }
+
+    .modal {
+        text-align: center;
+        margin-bottom: 75px;
     }
 
     .modal-p1 {
-        text-align: center;
-        font-size: 30px;
+        font-family: 'TheLastCall';
+        color: var(--primary-color);
+        font-size: 2rem;
     }
 
     .modal-p2 {
+        font-size: 1.5rem;
+    }
+
+    .modal-p3 {
+        font-size: 1rem;
         text-align: center;
+        padding: 0 5px;
     }
 
     .modal-p4 {
-        text-align: center;
+        font-size: .7rem;
     }
 
     .modal-a {
-        font-size: 18px;
-        text-align: center;
+        color: var(--primary-color);
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1.5rem;
     }
 
-    .modal1, .modal2, .modal3 {
-        margin-bottom: 50px;
-        text-align: center;
-        padding: 5px;
+    .modal-a:hover {
+        color: #fff;
     }
 
-    span {
-        display: none;
+    .modal-close1, .modal-close2, .modal-close3 {
+        font-family: 'TheLastCall';
+        color: var(--primary-color);
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
     }
 }
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    /* Navigation */
+    .nav-container {
+        width: 100vw;
+        background-color: var(--primary-color);
+        border: black solid 2px;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        padding: 5px 5px;
+        font-size: 1.2rem;
+        font-family: 'TheLastCall';
+        text-align: center;
+        border-bottom: 2px solid black;
+    }
+
+    .navbar ul li a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .navbar ul li a:hover {
+        cursor: pointer;
+        color: #fff;
+    }
+
+    /* Hero Section */
+    .hero-container {
+        margin: 30px;
+    }
+
+    .hero {
+        background-image: none;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pfirstname {
+        font-size: 10rem;
+    }
+
+    .plastname {
+        font-size: 7rem;
+    }
+
+    .pfirstname, .plastname {
+        color: black;
+        text-shadow: #8b2909 5px 5px 20px;
+        font-family: 'TheLastCall';
+    }
+
+    .ptitle {
+        font-size: 2rem;
+        color: #fff;
+        text-transform: uppercase;
+        text-shadow: #8b2909 3px 3px 3px;
+    }
+
+    .hero p {
+        color: #fff;
+        text-align: center;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn {
+        cursor: pointer;
+        background: var(--primary-color);
+        color: black;
+        text-decoration: none;
+        padding: 10px 30px;
+        margin: 5px 0 20px 0;
+        border-radius: 5px;
+    }
+
+    .btn:hover {
+        background-color: #ff653271;
+        transform: scale(.98);
+        color: #fff;
+    }
+
+    /* About Section */
+    .about-container {
+        text-align: left;
+        margin: 30px;
+    }
+
+    .about {
+        background-image: none;
+        margin: 0;
+    }
+
+    .about-title {
+        display: none;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+
+    .aboutJava {
+        padding-left: 50px;
+    }
+
+    /* Projects Section */
+    .projects-title {
+        text-align: center;
+        margin: 100px 0 30px 0;
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-shadow: #8b2909 3px 3px 3px;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+    }
+
+    img {
+        width: 300px;
+        height: 175px;
+        border: var(--primary-color) 10px groove;
+        margin: 0 10px;
+    }
+
+    /* Contact Section */
+    .contact {
+        text-align: center;
+    }
+
+    .contact-p {
+        font-size: 1.5rem;
+        padding-top: 20px;
+    }
+
+    .form-container {
+        margin-top: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .iname {
+        font-size: 1.6rem;
+    }
+
+    .name-form {
+        height: 25px;
+        width: 55%;
+    }
+
+    .iemail {
+        padding-top: 20px;
+        font-size: 1.6rem;
+    }
+
+    .email-form {
+        height: 25px;
+        width: 55%;
+    }
+
+    .imsg {
+        padding-top: 20px;
+        font-size: 1.5rem;
+    }
+
+    .imsgbox {
+        width: 90%;
+    }
+
+    .submit {
+        margin-top: 15px;
+        font-family: 'TheLastCall';
+        font-size: 30px;
+        padding: 12px 20px 10px 20px;
+        background-color: var(--primary-color);
+        border-radius: 5px;
+    }
+
+    .submit:hover {
+        cursor: pointer;
+        transform: scale(.98);
+        color: #fff;
+        background-color: #8b2909;
+    }
+
+    /* Footer */
+    footer {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        border-top: var(--primary-color) 1px solid;
+    }
+
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        color: var(--primary-color);
+        background-color: black;
+    }
+
+    .links a {
+        padding: 20px 40px;
+        color: var(--primary-color);
+    }
+
+    .links a:hover {
+        color: #fff;
+    }
+
+    /* Modals */
+    .mod-btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .modal-btn1, .modal-btn2, .modal-btn3 {
+        visibility: hidden;
+    }
+
+    .modal {
+        text-align: center;
+        margin-bottom: 75px;
+    }
+
+    .modal-p1 {
+        font-family: 'TheLastCall';
+        color: var(--primary-color);
+        font-size: 2rem;
+    }
+
+    .modal-p2 {
+        font-size: 1.5rem;
+    }
+
+    .modal-p3 {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0 5px;
+    }
+
+    .modal-p4 {
+        font-size: .7rem;
+    }
+
+    .modal-a {
+        color: var(--primary-color);
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+
+    .modal-a:hover {
+        color: #fff;
+    }
+
+    .modal-close1, .modal-close2, .modal-close3 {
+        font-family: 'TheLastCall';
+        color: var(--primary-color);
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+}   
