@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="new.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Questrial&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <script src="script.js" defer></script>
   <script src="https://kit.fontawesome.com/c6f3513d2f.js" crossorigin="anonymous"></script>
   <title>G.S. Ford: Web Designer and Developer</title>
@@ -32,28 +32,33 @@
     </div>
   </nav>
 
-  <div class="about-container">
-    <section class="about">
-      <p><span class="w">W</span> ith a passion for creating and design, G.S. Ford spends most of his spare time
-        studying
-        the language of coding.
-        <br>
-        <br>
-        <span class='w'>T</span> his love of innovation, art, and creative pursuits spans back to the streets of New
-        York
-        City, where he lived most of his life. G.S. stumbled onto coding after some years as a musician.
-        <br>
-        <br>
-        <span class="w">T</span> hrough this he came to understand that languages come in many forms and how to shape
-        them
-        to create precisely the clients needs.
-      </p>
-    </section>
-
+  <div class="contact">
     <div>
-      <button onclick="document.location='contact.html'">Hire Me As Your Website Designer</button>
+      <p>Would you like to work togther?
+        <br>
+        <br>If so, then please fill out the contact form below with a brief description of your project.
+        <br>
+        <br>I look forward to helping you expand your business needs.
+      </p>
+    </div>
+    <div class="form-container">
+      <form action="https://getform.io/f/37340bf5-2434-46c0-b3a0-c827d42354b1" method="POST">
+        <label for="name" class="name">Name</label>
+        <input type="text" name="name" class="name-form" placeholder="Your Name">
+
+        <label for="email" class="email">Email</label>
+        <input type="email" name="email" class="email-form" placeholder="Email Address">
+
+        <label class="msg">Tell me about your project</label>
+        <textarea rows="10" cols="50" name="message" class="msgbox"></textarea>
+        <div>
+          <input type="submit" value="submit">
+        </div>
+      </form>
     </div>
   </div>
+
+
 
   <div class="foot-container">
     <footer>
@@ -69,7 +74,6 @@
       </div>
     </footer>
   </div>
-
 </body>
 
 </html>
