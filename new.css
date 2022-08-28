@@ -153,7 +153,7 @@ button {
 
 button:hover {
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.1);
     color: #ee5522;
     background-color: white;
     font-weight: 700;
@@ -272,4 +272,102 @@ footer {
 
 .fab:hover {
     color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 400px) {
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 125px;
+    }
+}
+
+@media (max-width: 527px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .main-header h1 {
+        font-size: 5rem;
+    }
+
+    .main-header h2 {
+        font-size: 2.5rem;
+    }
+
+    img {
+        height: 250px;
+        width: 250px;
+    }
+
+    button {
+        margin: 30px 15px 15px 15px;
+    }
+
+    .about p {
+        margin: 10px;
+    }
+}
+
+@media (min-width: 750px) {
+    .foot-container {
+        position: relative;
+        display: flex;
+        min-height: 20vh;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
 }
