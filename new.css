@@ -302,6 +302,10 @@ footer {
         align-items: center;
         height: 125px;
     }
+
+    .fab {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 527px) {
