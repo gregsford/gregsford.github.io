@@ -120,8 +120,7 @@ h1, h2 {
 .img-spin {
     border-radius: 50%;
     height: 400px;
-    /* width: 400px; */
-    width: .75rem;
+    width: 400px;
     border: 10px solid #333;
     animation: rotation 10s infinite linear;
 }
