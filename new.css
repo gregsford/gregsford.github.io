@@ -213,6 +213,7 @@ button:hover {
 .card-body {
     font-size: .9rem;
     padding: 0 var(--padding);
+    font-family: 'Poppins', sans-serif;
 }
 
 .card-footer {
