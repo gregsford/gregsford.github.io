@@ -265,6 +265,8 @@ button:hover {
 }
 
 .about {
+    background-color: rgba(0,0,0,.6);
+    border-radius: 15px;
     margin: 14px;
     text-align: center;
     display: flex;
