@@ -5,6 +5,14 @@ toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active')
 })
 
+// Baby Ford Functions
+function babySite() {
+    window.open("https://fantastic-cupcake-f8ead0.netlify.app/");
+}
+function babyGit() {
+    window.open("https://github.com/gregsford/baby-ford");
+}
+
 // Password Gen Functions
 function pwGenSite() {
     window.open("https://gsford.tech/password-generator/");
