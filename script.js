@@ -5,20 +5,20 @@ toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active')
 })
 
-// Baby Name Functions
-function babyNameSite() {
-    window.open("https://baby-ford-name.netlify.app/");
-}
-function babyNameGit() {
-    window.open("https://github.com/gregsford/baby-name");
-}
-
 // Baby Ford Functions
 function babySite() {
     window.open("https://fantastic-cupcake-f8ead0.netlify.app/");
 }
 function babyGit() {
     window.open("https://github.com/gregsford/baby-ford");
+}
+
+// Baby Name Functions
+function babyNameSite() {
+    window.open("https://baby-ford-name.netlify.app/");
+}
+function babyNameGit() {
+    window.open("https://github.com/gregsford/baby-name");
 }
 
 // Password Gen Functions
