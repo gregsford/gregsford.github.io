@@ -1,27 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  padding: 40px;  /* Add space from top/side if you want */
-  background-image: url('images/laptop.png');
-  background-size: cover;      /* makes it cover entire screen */
-  background-position: center; /* keeps it centered */
-  background-repeat: no-repeat;/* prevents tiling */
+    padding: 40px;
+    /* Add space from top/side if you want */
+    background-image: url('images/laptop.png');
+    background-size: cover;
+    /* makes it cover entire screen */
+    background-position: center;
+    /* keeps it centered */
+    background-repeat: no-repeat;
+    /* prevents tiling */
 }
 
 h1 {
-  font-size: 4rem;
-  font-family: "Raleway", sans-serif;
-  position: fixed;
-  top: 20px;   /* distance from top */
-  left: 50%;
-  transform: translateX(-50%); /* center horizontally */
-  color: white;
-  margin: 0;
+    font-size: 4rem;
+    font-family: "Raleway", sans-serif;
+    position: fixed;
+    top: 20px;
+    /* distance from top */
+    left: 50%;
+    transform: translateX(-50%);
+    /* center horizontally */
+    color: white;
+    margin: 0;
 }
-
