@@ -1,0 +1,24 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 40px;  /* Add space from top/side if you want */
+  background-image: url('images/laptop.png');
+  background-size: cover;      /* makes it cover entire screen */
+  background-position: center; /* keeps it centered */
+  background-repeat: no-repeat;/* prevents tiling */
+}
+
+h1 {
+  font-size: 3rem;
+  position: fixed;
+  top: 20px;   /* distance from top */
+  left: 50%;
+  transform: translateX(-50%); /* center horizontally */
+  color: white;
+  margin: 0;
+}
+
